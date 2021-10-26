@@ -11,6 +11,7 @@ class Shape {
         stroke("white");
         line(this.pos.x, this.pos.y, this.thing.pos.x, this.thing.pos.y);
       }
+      stroke('black');
     }
   }
   
@@ -72,6 +73,7 @@ class Shape {
       super(thing.pos, colour, thing, value, delta);
     }
     show() {
+      super.show();
       fill(this.colour);
       ellipse(this.pos.x, this.pos.y, 20, 20);
     }
